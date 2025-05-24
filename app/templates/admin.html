@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="text-2xl mb-4">Добавить закон</h2>
+<form method="POST" class="space-y-4">
+  <input name="server" class="border p-2 w-full" placeholder="Сервер" required>
+  <input name="article" class="border p-2 w-full" placeholder="Статья" required>
+  <textarea name="text" class="border p-2 w-full" placeholder="Описание" required></textarea>
+  <button class="bg-blue-600 text-white p-2">Сохранить</button>
+</form>
+{% endblock %}
